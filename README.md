@@ -3,20 +3,6 @@
 > 🎥 **Video Demonstration**
 > [Click here to watch the full project walkthrough](https://drive.google.com/file/d/12FY3YIHaAQ6KReLDRQaF0ildY79naFXG/view?usp=sharing)
 
----
-
-## 🛡️ Data Privacy & Security Disclosure
-> As this application handles sensitive personal information (Resumes/CVs), it is built with a Privacy-First mindset following OWASP AI Security principles. 
-> 
-> * **Ephemeral Processing**: Uploaded PDF files are processed in-memory. No resume data is permanently stored on the server unless the user explicitly saves it to their profile.
-> * **Secure API Orchestration**: All communication with AI Inference Engines (OpenAI/Groq) is encrypted via TLS 1.2+ in transit.
-> * **Data Minimization**: We only send the raw text necessary for analysis to the LLM. Personal Identifiable Information (PII) such as Phone Numbers and Addresses can be redacted before processing.
-> * **Secrets Management**: API keys and database credentials are never hardcoded. They are managed through Environment Variables and GitHub Secrets for CI/CD pipelines.
-> * **Local Deployment Option**: For maximum privacy, users can run the entire stack locally using Docker, ensuring no data ever leaves their machine except for the AI inference call.
-
-*(Note: The above disclosure applies to extended analytics or AI resume integrations attached to this ecosystem.)*
-
----
 
 ## 🗺️ 1. High-Level Overview (The "50,000-Foot" View)
 
